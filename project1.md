@@ -2,6 +2,8 @@
 
 ## Lamp stack implementation
 
+### Installing apache2 webserver
+
 `sudo apt update`
 
 ![updating list of packages in package manager](./images/apache-sudo-apt-update.png)
@@ -46,6 +48,8 @@ curl http://localhost:80
 
 ![curl command -s](./images/curl-command-s.png)
 
+Installing mysql-server
+
 `sudo apt install mysql-server`
 
 ![installing mysql-server](./images/installing-mysql-server-image1.png)
@@ -64,6 +68,8 @@ curl http://localhost:80
 
 ![sudo mysql -p](./images/sudo-mysql--p.png)
 
+Installing php
+
 `sudo apt install php libapache2-mod-php php-mysql`
 
 ![installing php](./images/installing-php-1.png)
@@ -75,6 +81,8 @@ curl http://localhost:80
 ![confirming php version](./images/php--v.png)
 
 Creating a virtual host for website using apache
+
+`sudo mkdir /var/www/projectlamp`
 
 
 
