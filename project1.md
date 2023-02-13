@@ -22,7 +22,6 @@
 
 open inbound port 80
 
-
 ![opening inbound port 80](./images/opening-inbound-port-80.png)
 
 curl http://localhost:80
@@ -46,6 +45,30 @@ curl http://localhost:80
 `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
 
 ![curl command -s](./images/curl-command-s.png)
+
+`sudo apt install mysql-server`
+
+![installing mysql-server](./images/installing-mysql-server-image1.png)
+
+![installing mysql-server](./images/installing-mysql-server-image2.png)
+
+`sudo mysql`
+
+[sudo mysql](./images/sudo-mysql.png)
+
+`sudo mysql_secure_installation`
+
+![mysql secure server installation](./images/sudo-mysql-secure-server-installation.png)
+
+`sudo mysql -p`
+
+![sudo mysql -p](./images/sudo-mysql--p.png)
+
+
+
+
+
+
 
 
 
