@@ -64,6 +64,20 @@ curl http://localhost:80
 
 ![sudo mysql -p](./images/sudo-mysql--p.png)
 
+`sudo apt install php libapache2-mod-php php-mysql`
+
+![installing php](./images/installing-php-1.png)
+
+![installing php and dependencies](./images/installing-php-and-dependencies.png)
+
+`php -v`
+
+![confirming php version](./images/php--v.png)
+
+Creating a virtual host for website using apache
+
+
+
 
 
 
