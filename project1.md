@@ -41,6 +41,14 @@ curl http://localhost:80
 
 ![curl command page 7](./images/curl-command-7.png)
 
+[opening web browser with public ip](./images/public-ip-on-browser-apache2-default-page.png)
+
+`curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
+
+![curl command -s](./images/curl-command-s.png)
+
+
+
 
 
 
