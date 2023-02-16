@@ -84,6 +84,79 @@ Creating a virtual host for website using apache
 
 `sudo mkdir /var/www/projectlamp`
 
+`sudo chown -R $USER:$USER /var/www/projectlamp`
+
+![creating and changing ownership of projectlamp directory](./images/creating-and-changing-ownwership-of-directory-projectlamp.png)
+
+`sudo vi /etc/apache2/sites-available/projectlamp.conf`
+
+![projectlamp configuration file creation](./images/projectlamp-config-file.png)
+
+`sudo ls /etc/apache2/sites-available`
+
+![showing new file in sites available directory](./images/sites-available-directory.png)
+
+`sudo a2ensite projectlamp`
+
+![enabling virtual host](./images/enabling-virtual-host.png)
+
+`sudo a2dissite 000-default`
+
+![dissablin apache's default website](./images/dissabling-apaches-default-website.png)
+
+`sudo apache2ctl config test`
+
+![checking for syntax error in configuration](./images/checking-for-syntax-error-in-cofiguration.png)
+
+`sudo systemctl reload apache 2`
+
+![reloading apache 2](./images/reloading-apache2-for-changes-to-take-effect.png)
+
+`sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
+
+![creating index.html file in projectlamp folder](./images/creating-index.html-file-in-projectlamp-folder.png)
+
+[website url using IP](http://3.70.128.52:80)
+
+[opening website using IP](./images/opening-website-using-IP.png)
+
+`http://ec2-3-70-128-52.eu-central-1.compute.amazonaws.com`
+
+![accessing website on browser with public DNS name](./images/accessing-website-with-public-DNS.png)
+
+Enabling PHP on website
+
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+
+![changing order in which index.php file is listed](./images/changing-order-index.php.png)
+
+![changing order in which index.php file is listed](./images/changing-order-index.php-2.png)
+
+`sudo systemctl reload apache2`
+
+`vim /var/www/projectlamp/index.php`
+
+![Creating a new file named index.php inside your custom web root folder](./images/creating-new-index.php-file-inside-custom-web-root.png)
+
+refresh page
+
+![refreshed page](./images/refreshed-page.png)
+
+`sudo rm /var/www/projectlamp/index.php`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
